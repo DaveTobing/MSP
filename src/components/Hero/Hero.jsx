@@ -30,7 +30,7 @@ const hero = () => {
             <div className="hero-text">
                 <div>
                     <span  className='stroke-text'>Come </span>
-                    <span>Skate</span>
+                    <span  className= 'text-[#FFD369]'>Skate</span>
                 </div>
                 <div>
                     <span>With Us</span>
@@ -39,7 +39,7 @@ const hero = () => {
 
             {/* hero Buttons*/}
             <div className='hero-buttons'>
-                <buttons  className="btn">Visit Us</buttons>
+                <buttons  className="btn rounded">Visit Us</buttons>
             </div>
         </div>
    </div>

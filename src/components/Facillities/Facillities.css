@@ -24,10 +24,10 @@
  .category{
     display: flex;
     flex-direction: column;
-    background-color: #808080;
+    background-color: #393E46;
     padding: 2rem;
     gap: 1rem;
-    color: #EBEBD3;
+    color: #EEEEEE;
     justify-content: space-between;
     padding-bottom: 6rem;
 }
@@ -48,5 +48,5 @@
 }
 
 .category:hover{
-    background: #F4D35E;
+    background: #FFD369;
 }

@@ -14,7 +14,7 @@
 }
 
 .left-m>:nth-child(1){
-    color: #F7FF58;
+    color: #FFD369;
     font-weight: bold;
 }
 
@@ -49,7 +49,7 @@
     position: absolute;
     width: 17rem;
     height: 20rem;
-    border: 2px solid #F7FF58;
+    border: 2px solid #FFD369;
     background-color: transparent;
     right: 9rem;
     top: 0.9rem;
@@ -61,7 +61,7 @@
     height: 19rem;
     top: 4rem;
     right: 7rem;
-    background: #F7FF58;
+    background: #FFD369;
 }
 
 .arrows{

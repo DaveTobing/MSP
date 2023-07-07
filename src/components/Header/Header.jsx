@@ -17,10 +17,10 @@ function Header() {
     <div className="justify-between flex pt-5">
         <img src={Logo} alt="" className='w-25 h-20 pl-10' />
         <ul className='flex text-white list-none gap-8 uppercase pr-5 '>
-            <Link to= '/' className='p-4 hover:text-[#F7FF58]'>Home </Link>
-            <Link to= '/' className='p-4 hover:text-[#F7FF58]'>Facilities</Link>
-            <Link to= '/' className='p-4 hover:text-[#F7FF58]'>Messages</Link>
-            <Link to= '/contact' className='p-4 hover:text-[#F7FF58]'>Contact</Link>
+            <Link to= '/' className='p-4 hover:text-[#FFD369]'>Home </Link>
+            <Link to= '/' className='p-4 hover:text-[#FFD369]'>Facilities</Link>
+            <Link to= '/' className='p-4 hover:text-[#FFD369]'>Messages</Link>
+            <Link to= '/contact' className='p-4 hover:text-[#FFD369]'>Contact</Link>
         </ul>
         
         {/* <div onClick={handleNav}>

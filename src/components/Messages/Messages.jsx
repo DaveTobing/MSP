@@ -20,7 +20,7 @@ const Messages = () => {
             {testimonialsData[selected].review}
             </span>
             <span>
-                <span style={{color: '#F7FF58'}}>
+                <span style={{color: '#FFD369'}}>
                     {testimonialsData[selected].name}
                 </span>{" "}
                 -{testimonialsData[selected].status}
@@ -34,13 +34,13 @@ const Messages = () => {
             </div>
             <img src={testimonialsData[selected].image} alt="" />
             <div className="arrows" >
-                <FontAwesomeIcon icon={faArrowLeft} style = {{color: '#F7FF58', fontSize: '2.5rem'}} onClick= {
+                <FontAwesomeIcon icon={faArrowLeft} style = {{color: '#FFD369', fontSize: '2.5rem'}} onClick= {
                     ()=>{
                     selected === 0 ? 
                     setSelected(Length - 1) :
                     setSelected((prev) => prev - 1 );
                 }} />
-                <FontAwesomeIcon icon={faArrowRight}  style = {{color: '#F7FF58', fontSize: '2.5rem'}} onClick={
+                <FontAwesomeIcon icon={faArrowRight}  style = {{color: '#FFD369', fontSize: '2.5rem'}} onClick={
                     () =>{
                     selected === Length-1 ?
                     setSelected(0) :

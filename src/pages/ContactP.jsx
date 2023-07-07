@@ -11,7 +11,7 @@ const ContactP = () => {
     <div className="App">
     <Header/>
     <Contact/>
-    {/* <Footer/> */}
+    <Footer/>
   </div>
   )
 }
