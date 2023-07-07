@@ -1,0 +1,52 @@
+.F{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.F-header{
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.f-category{
+    display: flex;
+    gap: 1rem;
+} 
+
+ .category{
+    display: flex;
+    flex-direction: column;
+    background-color: #808080;
+    padding: 2rem;
+    gap: 1rem;
+    color: #EBEBD3;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+}
+
+.category>:nth-child(1){
+    height: 2rem;
+    fill: #EBEBD3;
+}
+
+.category>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.category>:nth-child(3){
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+.category:hover{
+    background: #F4D35E;
+}
