@@ -15,7 +15,7 @@ function Header() {
   }
   return (
     <div className="justify-between flex pt-5">
-        <img src={Logo} alt="" className='w-25 h-20 pl-10' />
+        <img src={Logo} alt="" className='w-25 h-20 pl-10'/> 
         <ul className='flex text-white list-none gap-8 uppercase pr-5 '>
             <Link to= '/' className='p-4 hover:text-[#FFD369]'>Home </Link>
             <Link to= '/' className='p-4 hover:text-[#FFD369]'>Facilities</Link>

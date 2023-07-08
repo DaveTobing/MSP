@@ -27,7 +27,8 @@
     background-color: #393E46;
     padding: 2rem;
     gap: 1rem;
-    color: #EEEEEE;
+    /* color: #EEEEEE; */
+    color: #FFD369;
     justify-content: space-between;
     padding-bottom: 6rem;
 }
@@ -47,6 +48,19 @@
     line-height: 25px;
 }
 
-.category:hover{
-    background: #FFD369;
+
+@media screen and (max-width:768px){
+    .F-header{
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .f-category{
+        flex-direction: column;
+    }
+
 }

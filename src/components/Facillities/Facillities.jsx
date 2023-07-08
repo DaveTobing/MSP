@@ -14,7 +14,7 @@ const facillities = () => {
 
         <div className="f-category">
             {programsData.map((program, i)=>(
-                <div className="category text-2xl">
+                <div className="category text-2xl rounded-lg">
                     <span key={i}>{program.icon}</span>
                     <span key={i}>{program.heading}</span>
                     <span key={i}>{program.details}</span>

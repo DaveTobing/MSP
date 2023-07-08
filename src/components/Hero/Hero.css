@@ -91,6 +91,34 @@
 }
 
 
+@media screen and (max-width:768px)
+{
+    .hero{
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .best-skate{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.9);
+        text-align: center;
+    }
+
+    .hero-text{
+        font-size:  xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-buttons{
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+
 
 
 
