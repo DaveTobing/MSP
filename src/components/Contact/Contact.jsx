@@ -1,7 +1,8 @@
 import React, { useRef } from 'react'
 import '../../App.css';
+import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
 import { Button, useToast } from "@chakra-ui/react";
 
@@ -37,7 +38,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className='flex justify-center pt-5'>
+      <div className='flex justify-center pt-5 map'>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15928.329487665482!2d98.709508!3d3.5685193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031314ba64a0a6b%3A0x5fa98bc76021873c!2sMenteng%20Skate%20Park%20Medan!5e0!3m2!1sen!2sid!4v1688700977099!5m2!1sen!2sid" 
         width="800" 
         height="450" 
@@ -49,9 +50,9 @@ const Contact = () => {
       </div>
       <div className='grid grid-cols-2 pt-5 text-lg text-white flex pt-10 pl-10'>
           {/* Icons left-0 */}
-              <div className= ''>
+              <div>
                   <div>
-                      <FontAwesomeIcon icon={faHome} style={{color: '#FFD369'}}/>
+                      <FontAwesomeIcon icon={faLocationDot} style={{color: '#FFD369'}}/>
                       <span>
                           <h5>Jl. Raya Medan Tenggara No.277</h5>
                           <p>Binjai, Kec. Medan Denai, Kota Medan, Sumatera Utara 20228</p>
@@ -77,15 +78,15 @@ const Contact = () => {
                       <form ref={form} className='inset-y-0 right-0' >
                         <div>
                               <label className='block mb-1'>Name</label>
-                              <input type="text" className='w-full text-black rounded' name="user_name" required/>
+                              <input type="text" required className='w-full text-black rounded' name="user_name" />
 
                               <label className='block mb-1'>Email</label>
-                              <input type="email" className='w-full text-black rounded' name="user_email" required/>
+                              <input type="email" required className='w-full text-black rounded' name="user_email" />
 
                               <label className='block mb-1'>Message</label>
-                              <textarea name="message" className='w-full text-black rounded' required/>
+                              <textarea name="message" required className='w-full text-black rounded' />
 
-                              <button onClick={sendEmail} type="submit" value="Send"  className='w-32 gap-1 h-10 font-medium bg-[#5E565A] rounded text-[#FFD369]'>Submit</button>
+                              <button onClick={sendEmail} type="submit" value="Send"  className='w-32 gap-1 h-10 font-medium bg-[#393E46] rounded text-[#FFD369]'>Submit</button>
                         </div>
 
                         </form>

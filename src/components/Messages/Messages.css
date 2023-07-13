@@ -5,6 +5,7 @@
 }
 
 .left-m{
+    padding-left: 2rem;
     display: flex;
     flex: 1 1;
     gap: 2rem;
@@ -77,3 +78,42 @@
     width: 1.5rem;
 }
 
+
+@media screen and (max-width:768px){
+    .messages{
+        padding-right: 2rem;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    .left-m{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.8);
+    }
+    .right-m{
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .right-m>div{
+        position: relative;
+        display: none;
+    }
+    .right-m>img{
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+    .right-m>:last-child{
+        display: block;
+        bottom: 0;
+        left: 0;
+        grid-area: 1rem;
+    }
+}

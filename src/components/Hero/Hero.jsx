@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import { Typewriter } from 'react-simple-typewriter'
+import { Link } from 'react-router-dom'
 
 
 
@@ -11,7 +12,7 @@ const hero = () => {
 
             {/* the best ad */}
             <div className="best-skate">
-                <span>
+                <span className='text-xs md:text-lg'>
                 <Typewriter
                     words={['The Best SkatePark in town']}
                     loop={0}
@@ -39,7 +40,9 @@ const hero = () => {
 
             {/* hero Buttons*/}
             <div className='hero-buttons'>
-                <buttons  className="btn rounded">Visit Us</buttons>
+                <Link to= '/contact'>
+                    <buttons className="btn bg-[#393E46] rounded" >Visit Us</buttons>
+                </Link>
             </div>
         </div>
    </div>

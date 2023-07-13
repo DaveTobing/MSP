@@ -75,6 +75,9 @@
     width: 2.5rem;
 }
 
+.choose{
+    font-size: 3rem;
+}
 
 @media screen and (max-width:768px){
     .Reasons{
@@ -82,6 +85,8 @@
     }
     .right-r{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .left-r{
         grid-auto-rows: auto;
@@ -89,12 +94,11 @@
         align-items: center;
         justify-content: center;
     }
-    .reasons-text{
-        flex-direction: column;
-        font-size: xx-large;
-        align-items: center;
-        justify-content: center;
+    .choose{
+        font-size: x-large;
     }
-
+    .details{
+        font-size: large;
+    }
 }
 

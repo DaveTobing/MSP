@@ -14,10 +14,10 @@ const Messages = () => {
 
   return (
     <div className="messages">
-        <div className="left-m pl-10 pt-5">
+        <div className="left-m">
             <span>Messages</span>
-            <span className='stroke-text'>What they</span>
-            <span>say about us</span>
+            <span className='stroke-text message'>What they</span>
+            <span className='message'>say about us</span>
             <motion.span
             key = {selected}
             initial = {{opacity: 0, x: -100}}

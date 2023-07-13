@@ -24,13 +24,13 @@ export const Reasons = () => {
             </div>
             <div className="right-r uppercase text-[#FFD369] font-bold">
                 <span>some reasons</span>
-                <span className=' stroke-text text-5xl choose'>Why Choose Our</span>
-                <span className= 'text-[#FFD369] text-5xl choose'> Skatepark?</span>
+                <span className=' stroke-text choose'>Why Choose Our</span>
+                <span className= 'text-[#FFD369] choose'> Skatepark?</span>
 
-                <div className='details-r '>
-                    <div className='reason-phone'>
+                <div className='details-r'>
+                    <div className='details'>
                         <FontAwesomeIcon icon={faCheck} style={{fontSize: '2rem', color: '#FFD369'}}/>
-                        <span className='reason-phone'> Our skatepark features a diverse range of obstacles, 
+                        <span  > Our skatepark features a diverse range of obstacles, 
                             including ramps, rails, and more. You'll never get bored and always find new challenges to push your skills.</span>
                     </div>
                     <div>

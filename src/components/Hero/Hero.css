@@ -14,16 +14,17 @@
 
 .best-skate{
     margin-top: 4rem;
-    background-color: #F7FFF7;
+    /* background-color: #F7FFF7; */
     border-radius: 4rem;
     width: fit-content;
     padding: 20px 13px;
     text-transform: uppercase;
-    color: #292F36;
+    color: #ECD444;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-size: medium;
 }
 
 .best-skate>span{
