@@ -34,7 +34,7 @@ const Messages = () => {
             </span>
         </div>
 
-        <div className="right-m pt-5">
+        <div className="right-m">
             <motion.div                
                 initial = {{opacity: 0, x: -100}}
                 transition = {{...transition, duration:2}}

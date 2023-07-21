@@ -24,11 +24,11 @@ function Header() {
         </ul>
         
         <div onClick={handleNav} className='md:hidden'>
-          {!nav ? <FontAwesomeIcon icon={faXmark}/> : <FontAwesomeIcon icon={faBars}/>}
+          {!nav ? <FontAwesomeIcon icon={faXmark} style={{ fontSize: '2rem', color: '#FFD369' }} /> : <FontAwesomeIcon icon={faBars} style={{ fontSize: '2rem', color: '#FFD369' }} />}
         </div>
         
         {/* mobile menu */}
-        <div className={!nav ? ' text-white fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full bg-[#000300] ease-in-out duration-500 hidden' : 'fixed left-[-100%]'}>
+        <div className={!nav ? 'text-white fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full bg-[#000300] ease-in-out duration-500 hidden' : 'fixed left-[-100%]'}>
         <img src={Logo} alt="" className='w-25 h-20 pl-5 pt-5' />
           <ul className='pt-17 uppercase'>
             <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]'>Home </Link></li>
