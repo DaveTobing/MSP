@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Facillities.css';
 import { programsData } from '../../data/programsData';
 
-const facillities = () => {
+const Facillities = () => {
   return (
     <div className="F" id = "f">
         {/* header */}
@@ -27,4 +27,4 @@ const facillities = () => {
   )
 }
 
-export default facillities
+export default Facillities

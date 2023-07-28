@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const hero = () => {
   return (
-   <div className="hero">
+   <div className="hero h-screen">
         <div className="left-h">
 
             {/* the best ad */}

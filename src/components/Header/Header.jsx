@@ -13,27 +13,35 @@ function Header() {
   const handleNav = () => {
     setNav(!nav)
   }
+
+  const handleNavItemClick = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="justify-between flex pt-5">
         <img src={Logo} alt="" className='hide-logo w-25 h-20 pl-10'/> 
         <ul className='hidden md:flex text-white list-none gap-8 uppercase pr-5 '>
-            <Link to= '/' className='p-4 hover:text-[#FFD369]'>Home </Link>
-            <Link to= '/' className='p-4 hover:text-[#FFD369]'>Facilities</Link>
-            <Link to= '/' className='p-4 hover:text-[#FFD369]'>Messages</Link>
+            <Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('Home')}>Home </Link>
+            <Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('f')}>Facilities</Link>
+            <Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('m')}>Messages</Link>
             <Link to= '/contact' className='p-4 hover:text-[#FFD369]'>Contact</Link>
         </ul>
         
-        <div onClick={handleNav} className='md:hidden'>
-          {!nav ? <FontAwesomeIcon icon={faXmark} style={{ fontSize: '2rem', color: '#FFD369' }} /> : <FontAwesomeIcon icon={faBars} style={{ fontSize: '2rem', color: '#FFD369' }} />}
+        <div onClick={handleNav} className='pl-5 md:hidden'>
+          {!nav ? <FontAwesomeIcon icon={faBars} style={{ fontSize: '2rem', color: '#FFD369' }} /> : <FontAwesomeIcon icon={faXmark} style={{ fontSize: '2rem', color: '#FFD369' }} />}
         </div>
         
         {/* mobile menu */}
         <div className={!nav ? 'text-white fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full bg-[#000300] ease-in-out duration-500 hidden' : 'fixed left-[-100%]'}>
         <img src={Logo} alt="" className='w-25 h-20 pl-5 pt-5' />
           <ul className='pt-17 uppercase'>
-            <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]'>Home </Link></li>
-            <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]'>Facilities</Link></li>
-            <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]'>Messages</Link></li>
+            <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('Home')}>Home </Link></li>
+            <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('f')}>Facilities</Link></li>
+            <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('m')}>Messages</Link></li>
             <li className='p-4 '><Link to= '/contact' className='p-4 hover:text-[#FFD369]'>Contact</Link></li>
           </ul>
         </div>
