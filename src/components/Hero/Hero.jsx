@@ -2,16 +2,24 @@ import React from 'react'
 import './Hero.css'
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleBoolean } from '../store';
 
 
 
-const hero = () => {
+function Hero () {
+    const sharedBoolean = useSelector((state) => state.shared.sharedBoolean);
+    const dispatch = useDispatch();
+
+    const handleToggle = () => {
+        dispatch(toggleBoolean());
+    };
+
   return (
    <div className="hero h-screen">
         <div className="left-h">
 
-            {/* the best ad */}
-            <div className="best-skate">
+            {sharedBoolean ? <div className="best-skate">
                 <span className='text-xs md:text-lg'>
                 <Typewriter
                     words={['The Best SkatePark in town']}
@@ -24,8 +32,7 @@ const hero = () => {
                 />
                 </span>
 
-            </div>
-
+            </div>: <div><span></span></div>}
 
             {/* Hero Heading*/}
             <div className="hero-text">
@@ -49,4 +56,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default Hero
