@@ -13,7 +13,7 @@ const Messages = () => {
 
 
   return (
-    <div className="messages" id="m">
+    <div className="messages pt-10" id="m">
         <div className="left-m">
             <span>Messages</span>
             <span className='stroke-text message'>What they</span>
