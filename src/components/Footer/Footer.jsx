@@ -15,7 +15,6 @@ const Footer = () => {
         </span>
       </div>
       <div className='flex justify-center gap-5 pt-11'>
-        
         <Link to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} style={{ fontSize: '2rem', color: '#FFD369' }} />
         </Link>

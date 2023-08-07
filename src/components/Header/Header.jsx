@@ -24,7 +24,7 @@ function Header() {
   };
 
   return (
-    <div className="justify-between flex pt-5">
+    <div className="object-right md:justify-between flex pt-5 ">
         <img src={Logo} alt="" className='hide-logo md:w-25 h-20 pl-10'/> 
         <ul className='hidden md:flex text-white list-none gap-8 uppercase pr-5 '>
             <Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('Home')}>Home </Link>
@@ -33,7 +33,7 @@ function Header() {
             <Link to= '/contact' className='p-4 hover:text-[#FFD369]'>Contact</Link>
         </ul>
         
-        <div onClick={handleToggle} className='pl-80 md:hidden'>
+        <div onClick={handleToggle} className='object-right md:hidden'>
           {!sharedBoolean ? <FontAwesomeIcon icon={faXmark} style={{ fontSize: '2rem', color: '#FFD369' }} /> :  <FontAwesomeIcon icon={faBars} style={{ fontSize: '2rem', color: '#FFD369' }} /> }
         </div>
         
@@ -41,10 +41,10 @@ function Header() {
         <div className={!sharedBoolean ? 'text-white fixed left-0 top-0 w-[60%] h-full bg-[#1E1E24] ease-in-out duration-500' : 'fixed left-[-100%]' }>
         <img src={Logo} alt="" className='w-25 h-20 pl-5 pt-5' />
           <ul className='pt-17 uppercase'>
-            <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('Home')}>Home </Link></li>
-            <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('f')}>Facilities</Link></li>
-            <li className='p-4 '><Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('m')}>Messages</Link></li>
-            <li className='p-4 '><Link to= '/contact' className='p-4 hover:text-[#FFD369]'>Contact</Link></li>
+            <li className='p-8 hover:text-[#FFD369]'><Link to= '/'  onClick={() => handleNavItemClick('Home')}>Home </Link></li>
+            <li className='p-8 hover:text-[#FFD369]'><Link to= '/'  onClick={() => handleNavItemClick('f')}>Facilities</Link></li>
+            <li className='p-8 hover:text-[#FFD369]'><Link to= '/'  onClick={() => handleNavItemClick('m')}>Messages</Link></li>
+            <li className='p-8 hover:text-[#FFD369]'><Link to= '/contact' >Contact</Link></li>
           </ul>
         </div>
     </div>

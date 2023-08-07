@@ -19,23 +19,30 @@ function Hero () {
    <div className="hero h-screen">
         <div className="left-h">
 
-            {sharedBoolean ? <div className="best-skate">
+            {sharedBoolean ? 
+            <div className={`best-skate`}>
                 <span className='text-xs md:text-lg'>
                 <Typewriter
                     words={['The Best SkatePark in town']}
                     loop={0}
                     cursor
-                    cursorStyle='_'
+                    cursorStyle=''
                     typeSpeed={70}
                     deleteSpeed={50}
                     delaySpeed={1000}
                 />
                 </span>
+            </div>
+            : 
+            <div className='best-skate text-[#393E46]'>
+                <span className='text-xs md:text-lg'>
 
-            </div>: <div><span></span></div>}
+                </span>
+            </div>
+            }
 
             {/* Hero Heading*/}
-            <div className="hero-text">
+            <div className="hero-text md: pt-10">
                 <div>
                     <span  className='stroke-text'>Come </span>
                     <span  className= 'text-[#FFD369]'>Skate</span>
