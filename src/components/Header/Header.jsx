@@ -24,7 +24,7 @@ function Header() {
   };
 
   return (
-    <div className="object-right md:justify-between flex pt-5 ">
+    <div className="md:flex justify-between flex pt-5 h-24 mx-auto">
         <img src={Logo} alt="" className='hide-logo md:w-25 h-20 pl-10'/> 
         <ul className='hidden md:flex text-white list-none gap-8 uppercase pr-5 '>
             <Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('Home')}>Home </Link>
@@ -32,8 +32,12 @@ function Header() {
             <Link to= '/' className='p-4 hover:text-[#FFD369]' onClick={() => handleNavItemClick('m')}>Messages</Link>
             <Link to= '/contact' className='p-4 hover:text-[#FFD369]'>Contact</Link>
         </ul>
+
+        {/* <div >
+          <FontAwesomeIcon icon={faXmark} style={{ fontSize: '2rem', color: '#FFD369' }} />
+        </div> */}
         
-        <div onClick={handleToggle} className='object-right md:hidden'>
+        <div onClick={handleToggle} className='md:hidden'>
           {!sharedBoolean ? <FontAwesomeIcon icon={faXmark} style={{ fontSize: '2rem', color: '#FFD369' }} /> :  <FontAwesomeIcon icon={faBars} style={{ fontSize: '2rem', color: '#FFD369' }} /> }
         </div>
         

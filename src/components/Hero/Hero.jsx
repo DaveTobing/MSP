@@ -26,7 +26,7 @@ function Hero () {
                     words={['The Best SkatePark in town']}
                     loop={0}
                     cursor
-                    cursorStyle=''
+                    cursorStyle='_'
                     typeSpeed={70}
                     deleteSpeed={50}
                     delaySpeed={1000}
@@ -55,7 +55,7 @@ function Hero () {
             {/* hero Buttons*/}
             <div className='hero-buttons'>
                 <Link to= '/contact'>
-                    <buttons className="btn bg-[#393E46] rounded" >Visit Us</buttons>
+                    <buttons className="btn bg-[#393E46]" >Visit Us</buttons>
                 </Link>
             </div>
         </div>
