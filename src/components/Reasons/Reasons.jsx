@@ -1,7 +1,6 @@
 import React from 'react'
 import './Reasons.css'
 import image1 from '../../assets/778233-removebg-preview.png'
-import adidas from '../../assets/adidas.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 

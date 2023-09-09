@@ -2,9 +2,9 @@ import React, { useRef } from 'react'
 import '../../App.css';
 import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
-import { Button, useToast } from "@chakra-ui/react";
+import {useToast} from "@chakra-ui/react";
 
 
 const Contact = () => {
@@ -33,6 +33,8 @@ const Contact = () => {
           console.log(error.text);
 
       });
+
+      e.target.reset()
   };
 
   return (
@@ -48,7 +50,7 @@ const Contact = () => {
         </iframe>
       </div>
 
-      <div className='flex-col md:grid grid-cols-2 pt-5 text-lg text-white flex pt-10 pl-10'>
+      <div className='flex-col md:grid grid-cols-2 text-lg text-white flex pt-10 pl-10'>
           {/* Icons left-0 */}
               <div>
                   <div>
@@ -74,19 +76,34 @@ const Contact = () => {
                   </div>
               </div>
               {/* Form*/}
-              <div className='top-4 md:flex'>
-                      <form ref={form} className='inset-y-0 right-0' >
+              <div className='pt-10 md:flex'>
+                      <form ref={form} className='inset-y-0 right-0' onSubmit={sendEmail} >
                         <div>
                               <label className='block mb-1'>Name</label>
-                              <input type="text" required className='md:w-full text-black rounded' name="user_name" />
+                              <input 
+                              type="text" 
+                              className='md:w-full text-black rounded' 
+                              name="user_name" 
+                              placeholder="type your name..." 
+                              required
+                              />
 
                               <label className='block mb-1'>Email</label>
-                              <input type="email" required className='md:w-full text-black rounded' name="user_email" />
+                              <input 
+                              type="email" 
+                              className='md:w-full text-black rounded' 
+                              name="user_email" 
+                              placeholder="type your email..." 
+                              required/>
 
                               <label className='block mb-1'>Message</label>
-                              <textarea name="message" required className='md:w-full text-black rounded' />
+                              <textarea 
+                              name="message" 
+                              className='md:w-full text-black rounded' 
+                              placeholder="type your message..." 
+                              required/>
 
-                              <button onClick={sendEmail} type="submit" value="Send"  className='w-32 gap-1 h-10 font-medium bg-[#393E46] rounded text-[#FFD369]'>Submit</button>
+                              <button type="submit" value="Send"  className='w-32 gap-1 h-10 font-medium bg-[#393E46] rounded text-[#FFD369]'>Submit</button>
                         </div>
 
                       </form>

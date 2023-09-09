@@ -14,15 +14,17 @@ const Footer = () => {
           ages and skill levels to express themselves, push their limits, and connect with a vibrant community of fellow skaters.
         </span>
       </div>
-      <div className='flex justify-center gap-5 pt-11'>
+      <div className='flex justify-center gap-7 pt-11'>
         <Link to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} style={{ fontSize: '2rem', color: '#FFD369' }} />
         </Link>
 
+        <img src={Logo} alt="" className='w-17 h-10 pb-2'/>
+
         <Link to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faYoutube} style={{ fontSize: '2rem', color: '#FFD369'}}/>
         </Link>
-        <img src={Logo} alt="" className='w-15 h-10 pb-2'/>
+        
       </div>
     </div>
   )
