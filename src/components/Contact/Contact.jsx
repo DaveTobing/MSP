@@ -1,6 +1,5 @@
 import React, { useRef } from 'react'
 import '../../App.css';
-import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import emailjs from '@emailjs/browser';
@@ -39,7 +38,7 @@ const Contact = () => {
 
   return (
     <div className='flex-col'>
-      <div className='flex justify-center pt-5 map'>
+      <div className='flex map scale-100 md:justify-center pt-5'>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15928.329487665482!2d98.709508!3d3.5685193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031314ba64a0a6b%3A0x5fa98bc76021873c!2sMenteng%20Skate%20Park%20Medan!5e0!3m2!1sen!2sid!4v1688700977099!5m2!1sen!2sid" 
         width="800" 
         height="450" 
@@ -50,7 +49,7 @@ const Contact = () => {
         </iframe>
       </div>
 
-      <div className='flex-col md:grid grid-cols-2 text-lg text-white flex pt-10 pl-10'>
+      <div className='flex-col md:grid grid-cols-2 text-lg text-white flex p-10 gap-4'>
           {/* Icons left-0 */}
               <div>
                   <div>
@@ -76,9 +75,9 @@ const Contact = () => {
                   </div>
               </div>
               {/* Form*/}
-              <div className='pt-10 md:flex'>
-                      <form ref={form} className='inset-y-0 right-0' onSubmit={sendEmail} >
-                        <div>
+              <div className='md:flex w-full'>
+                      <form ref={form} className='inset-y-0 right-0 md:w-1/2' onSubmit={sendEmail} >
+                        <div className='w-full flex flex-col gap-3'>
                               <label className='block mb-1'>Name</label>
                               <input 
                               type="text" 
@@ -101,9 +100,10 @@ const Contact = () => {
                               name="message" 
                               className='md:w-full text-black rounded' 
                               placeholder="type your message..." 
+                              rows={7}
                               required/>
 
-                              <button type="submit" value="Send"  className='w-32 gap-1 h-10 font-medium bg-[#393E46] rounded text-[#FFD369]'>Submit</button>
+                              <button type="submit" value="Send" className='w-full h-10 font-medium bg-[#393E46] rounded text-[#FFD369] items-center'>Submit</button>
                         </div>
 
                       </form>
