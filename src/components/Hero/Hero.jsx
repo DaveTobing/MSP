@@ -2,18 +2,12 @@ import React from 'react'
 import './Hero.css'
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux';
-import { toggleBoolean } from '../store';
+import { useSelector} from 'react-redux';
 
 
 
 function Hero () {
     const sharedBoolean = useSelector((state) => state.shared.sharedBoolean);
-    const dispatch = useDispatch();
-
-    const handleToggle = () => {
-        dispatch(toggleBoolean());
-    };
 
   return (
    <div className="hero h-screen">
