@@ -2,38 +2,26 @@ import React from 'react'
 import './Hero.css'
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
-import { useSelector} from 'react-redux';
 
 
 
 function Hero () {
-    const sharedBoolean = useSelector((state) => state.shared.sharedBoolean);
-
   return (
    <div className="hero h-screen">
         <div className="left-h">
-
-            {sharedBoolean ? 
             <div className={`best-skate`}>
-                <span className='text-xs md:text-lg'>
-                <Typewriter
-                    words={['The Best SkatePark in town']}
-                    loop={0}
-                    cursor
-                    cursorStyle='_'
-                    typeSpeed={70}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                />
-                </span>
+                    <span className='text-xs md:text-lg'>
+                    <Typewriter
+                        words={['The Best SkatePark in town']}
+                        loop={0}
+                        cursor
+                        cursorStyle='_'
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                    />
+                    </span>
             </div>
-            : 
-            <div className='best-skate text-[#393E46]'>
-                <span className='text-xs md:text-lg'>
-
-                </span>
-            </div>
-            }
 
             {/* Hero Heading*/}
             <div className="hero-text md: pt-10">
