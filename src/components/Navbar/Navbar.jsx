@@ -38,7 +38,7 @@ function Navbar() {
         </div>
         
         {/* mobile menu */}
-        <div className={!sharedBoolean ? 'text-white fixed left-0 top-0 w-[60%] h-full bg-[#1E1E24] ease-in-out duration-500 flex flex-col' : 'fixed left-[-100%]' }>
+        <div className={!sharedBoolean ? 'text-white fixed left-0 top-0 w-[60%] h-full bg-[#1E1E24] ease-in-out duration-500 flex flex-col z-[2]' : 'fixed left-[-100%]' }>
         <img src={Logo} alt="" className='w-[100px] h-[100px] self-center' />
           <ul className='pt-17 uppercase text-center'>
             <li className='p-8 hover:text-[#FFD369]'><Link to= '/'  onClick={() => handleNavItemClick('Home')}>Home </Link></li>

@@ -15,13 +15,13 @@ const Footer = () => {
         </span>
       </div>
       <div className='flex justify-center gap-7 pt-11'>
-        <Link to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+        <Link to="https://instagram.com/mentengskatepark" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} style={{ fontSize: '2rem', color: '#FFD369' }} />
         </Link>
 
         <img src={Logo} alt="" className='w-17 h-10 pb-2'/>
 
-        <Link to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+        <Link to="https://youtube.com/@mentengskatepark7138" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faYoutube} style={{ fontSize: '2rem', color: '#FFD369'}}/>
         </Link>
         
