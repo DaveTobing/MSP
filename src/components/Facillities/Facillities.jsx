@@ -14,7 +14,7 @@ const Facillities = () => {
 
         <div className="f-category">
             {programsData.map((program, i)=>(
-                <div className="category text-2xl rounded-lg">
+                <div className="category text-2xl rounded-lg hover:scale-105 duration-300">
                     <span key={i}>{program.icon}</span>
                     <span key={i}>{program.heading}</span>
                     <span key={i}>{program.details}</span>

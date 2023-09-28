@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleBoolean } from '../store';
 
-
 function Navbar() {
   const sharedBoolean = useSelector((state) => state.shared.sharedBoolean);
   const dispatch = useDispatch();
